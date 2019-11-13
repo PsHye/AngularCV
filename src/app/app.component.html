@@ -1,0 +1,66 @@
+<mat-sidenav-container>
+    <mat-sidenav #sidenav>
+        <div style="text-align: center; background-color: #eeeeee;">
+            <img src="https://angular.io/assets/images/logos/angular/angular.png" width=50%>
+            <p class="mat-h3"> Jr. Web & Mobile Dev </p>
+            <p class="mat-h5"> Always ready to learn something new! ♥ </p>
+        </div>
+        <mat-divider></mat-divider>
+        <mat-grid-list cols="3" rowHeight="2:1" class="footer">
+            <mat-grid-tile>1</mat-grid-tile>
+            <mat-grid-tile>2</mat-grid-tile>
+            <mat-grid-tile>3</mat-grid-tile>
+        </mat-grid-list>
+    </mat-sidenav>
+
+    <mat-toolbar color="primary">
+        <button mat-icon-button (click)="sidenav.open()">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <span class="fill-space"></span>
+        <i class="material-icons" id="heartFavorite">
+            favorite
+        </i>
+    </mat-toolbar>
+    <mat-card class="mainCard">
+        <p class="profileImage"> <img
+                src="https://media.licdn.com/dms/image/C5603AQETlWrsTT5agQ/profile-displayphoto-shrink_200_200/0?e=1579132800&v=beta&t=d1Tc9TL7sYanyTF9FHZyk56D7yjnyKd6loH05OU164s">
+        </p>
+        <mat-accordion>
+
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    This is the expansion 1 title
+                </mat-expansion-panel-header>
+
+                This the expansion 1 content
+
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    This is the expansion 2 title
+                </mat-expansion-panel-header>
+
+                This the expansion 2 content
+
+            </mat-expansion-panel>
+
+        </mat-accordion>
+        <mat-grid-list cols="3" rowHeight="2:1">
+            <mat-grid-tile>
+                <mat-card>
+                    <mat-grid-tile-header>
+                        <mat-icon></mat-icon>
+                    </mat-grid-tile-header>
+                </mat-card>
+            </mat-grid-tile>
+            <mat-grid-tile>2</mat-grid-tile>
+            <mat-grid-tile>3</mat-grid-tile>
+        </mat-grid-list>
+    </mat-card>
+    <app-skills></app-skills>
+    <!-- primary content -->
+
+
+</mat-sidenav-container>

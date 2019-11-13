@@ -1,0 +1,38 @@
+@import '~@angular/material/theming';
+
+.profileImage{
+    margin-top: 0.5%;
+}
+.mainCard{
+    @include mat-elevation(15);
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.mainCard{
+    text-align: center;
+}
+
+.fill-space {
+    // This fills the remaining space, by using flexbox.
+    // Every toolbar row uses a flexbox row layout.
+    flex: 1 1 auto;
+  }
+#heartFavorite:hover{
+    color: #d50000;
+    cursor: pointer;
+}
+.menuAngLogo{
+    height: 5%;
+}
+
+.socialIcons{
+    position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.footer{
+  bottom: 0;
+  left: 0;
+}
