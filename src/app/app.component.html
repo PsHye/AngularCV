@@ -7,7 +7,7 @@
         </div>
         <mat-divider></mat-divider>
         <mat-grid-list cols="3" rowHeight="2:1" class="footer">
-            <mat-grid-tile>1</mat-grid-tile>
+            <mat-grid-tile (click)="TestingFunction();sidenav.close()" style="cursor: pointer;">1</mat-grid-tile>
             <mat-grid-tile>2</mat-grid-tile>
             <mat-grid-tile>3</mat-grid-tile>
         </mat-grid-list>
@@ -23,7 +23,7 @@
         </i>
     </mat-toolbar>
     <mat-card class="mainCard">
-        <p class="profileImage"> <img
+        <p class="profileImage" > <img style="border-radius: 50%;"
                 src="https://media.licdn.com/dms/image/C5603AQETlWrsTT5agQ/profile-displayphoto-shrink_200_200/0?e=1579132800&v=beta&t=d1Tc9TL7sYanyTF9FHZyk56D7yjnyKd6loH05OU164s">
         </p>
         <mat-accordion>
@@ -47,7 +47,7 @@
             </mat-expansion-panel>
 
         </mat-accordion>
-        <mat-grid-list cols="3" rowHeight="2:1">
+        <mat-grid-list  *ngIf="edited" cols="3" rowHeight="2:1">
             <mat-grid-tile>
                 <mat-card>
                     <mat-grid-tile-header>
